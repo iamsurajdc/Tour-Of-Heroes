@@ -8,16 +8,16 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 const routes: Routes = [
     { path: '', 
       redirectTo: '/dashboard', 
-      pathMatch: 'full' 
+      pathMatch: 'full'
     },
     { path: 'dashboard',
-      component: DashboardComponent 
+      component: DashboardComponent
     },
-    { path: 'detail/:id', 
-      component: HeroDetailComponent 
-    },    
-    { path: 'heroes', 
-      component: HeroesComponent 
+    { path: 'detail/:id',
+      component: HeroDetailComponent
+    },
+    { path: 'heroes',
+      component: HeroesComponent
     },
 ];
 
@@ -28,8 +28,8 @@ const routes: Routes = [
   ],
   declarations: [],
   exports: [RouterModule],
-})  
+})
 
-export class AppRoutingModule { 
+export class AppRoutingModule {
   
 }
