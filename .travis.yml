@@ -22,11 +22,5 @@ script:
   - npm install
   - ng build --prod
 
-jobs:
-  include:
-    - stage: deploy
-      script: echo "Deploying to firebase ..."
-      deploy:
-        provider: firebase
-        api_key: $FIREBASE_TOKEN
-        on: firebase deploy
+after_success: 
+  - firebase deploy --token $FIREBASE_TOKEN
